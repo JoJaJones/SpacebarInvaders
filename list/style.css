@@ -1,0 +1,150 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	margin: 0px;
+	height:100%;
+	display: grid;
+	grid-template-columns: 25% 50% 25%;
+	background: #2b2b2a;
+	color: #02d1d1;
+}
+
+#listContent {
+	grid-column-start: 2;
+	height: 100%;
+}
+
+.listItem {
+	display: grid;
+	height: 9%;
+	grid-template-columns: 20% 15% 65%;
+	grid-template-rows: 50% 50%;
+	padding-top: .5%;
+	padding-bottom: .5%;
+}
+
+.listItem span {
+	height: 100%;
+	font-family: "Lucida Console";
+	grid-template-rows: 15% 70% 15%;
+	display: grid;
+}
+
+.listItem span .innerSpan{
+	height: 100%;
+	width: 100%;	
+}
+
+/*Initials Style Code*/
+.listItem span:nth-of-type(1){
+	/*https://stackoverflow.com/questions/16056591/font-scaling-based-on-width-of-container*/
+	grid-column-start: 1;
+	grid-column-end: span 1;
+	grid-row-start: 1;
+	grid-row-end: span 2;
+	
+	border-left: 1px solid;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-right:  1px solid;
+	border-color: #545351;
+}
+
+.listItem span:nth-of-type(1) .innerSpan {
+	font-size: 5vmin;
+	text-align: center;
+	width: 100%;
+	border: 0px;
+	grid-row-start: 2;
+	grid-row-end: span 1;
+}
+
+
+/*Shot and Hit Style Code*/
+.listItem span:nth-of-type(2){
+	padding-top: auto;
+	margin-bottom: auto;
+	padding-left: 3%;
+	grid-column-start: 2;
+	grid-column-end: span 1;
+	grid-row-start: 1;
+	grid-row-end: span 1;
+	border-left: 1px solid;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #545351;
+}
+
+.listItem span:nth-of-type(2) .innerSpan {
+	font-size: 2.5vmin;
+	width: 100%;
+	border: 0px;
+	grid-row-start: 2;
+	grid-row-end: span 1;
+}
+
+.listItem span:nth-of-type(4){
+	margin-top: auto;
+	margin-bottom: auto;
+	padding-left: 3%;
+	grid-column-start: 2;
+	grid-column-end: span 1;
+	grid-row-start: 2;
+	grid-row-end: span 1;
+	border-left: 1px solid;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #545351;	
+}
+
+.listItem span:nth-of-type(4) .innerSpan {
+	font-size: 2.5vmin;
+	width: 100%;
+	border: 0px;
+	grid-row-start: 2;
+	grid-row-end: span 1;
+}
+
+/*String Style Code*/
+.listItem span:nth-of-type(3){
+	margin-top: auto;
+	grid-column-start: 3;
+	grid-column-end: span 1;
+	grid-row-start: 1;
+	grid-row-end: span 1;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-right:  1px solid;
+	border-color: #545351;
+}
+
+.listItem span:nth-of-type(3) .innerSpan {
+	font-size: 1.5vmin;
+	width: 100%;
+	border: 0px;
+	grid-row-start: 2;
+	grid-row-end: span 1;
+}
+
+.listItem span:nth-of-type(5){
+	margin-bottom: auto;
+	grid-column-start: 3;
+	grid-column-end: span 1;
+	grid-row-start: 2;
+	grid-row-end: span 1;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-right:  1px solid;
+	border-color: #545351;
+}
+
+.listItem span:nth-of-type(5) .innerSpan {
+	font-size: 1.5vmin;
+	width: 100%;
+	border: 0px;
+	grid-row-start: 2;
+	grid-row-end: span 1;
+}

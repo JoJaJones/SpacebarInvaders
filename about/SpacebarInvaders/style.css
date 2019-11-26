@@ -1,0 +1,21 @@
+iframe {
+	border-width: 0px;
+	width:  100%;
+}
+
+#gamePageGameDiv {
+	height: 75%;
+}
+
+body {
+	margin: 0px;
+	background-color: #2b2b2a;
+	color: #02d1d1;
+	font-family: "Lucida Console";
+}
+
+
+#formDiv {
+	margin: auto;
+	text-align: center;
+}

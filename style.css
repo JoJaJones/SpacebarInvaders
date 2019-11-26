@@ -1,0 +1,44 @@
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0px;	
+	overflow: hidden;
+	font-family: "Lucida Console";
+}
+
+#container {
+	height: 100%;
+	width: 100%;
+	margin: 0px;
+	background: #2b2b2a;
+}
+
+#menuDiv {
+	height: 10%;
+	width: 100%;
+	background: #2b2b2a;
+}
+
+#spacingDiv {
+	height: 20%;
+}
+
+#linkDiv {
+	height: 80%;
+	width: 100%;
+	font-size: 0px; /* Fix spacing between menu sections as found: https://css-tricks.com/fighting-the-space-between-inline-block-elements/ */
+}
+
+#linkDiv span {
+	width: 25%;
+	height: 100%;
+	display: inline-block;
+	text-align: center;
+	border: 1px black;
+	color: #02d1d1;
+	background: #545351;
+}
+
+iframe {
+	border: 0px;
+}
