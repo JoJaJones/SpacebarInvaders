@@ -58,8 +58,6 @@ function postToMessages(){
 	};
 
 	let url = "../list/list.html?initials="
-
-	
 	
 	//append values to the url
 	var initials = document.getElementById("initials").value;
@@ -71,7 +69,6 @@ function postToMessages(){
 	
 	request.open("POST", url, true);
 	request.send();
-	
 }
 
 window.addEventListener("keydown", detectKeyPress);

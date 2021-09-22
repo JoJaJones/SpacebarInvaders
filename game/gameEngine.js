@@ -1,5 +1,4 @@
 class GameEngine{
-
 	constructor(frameLength, render, update){
 		this.update = update; //function to update the state of the buffer canvas
 		this.render = render; //function to draw the buffer canvas to the canvas on the page
@@ -52,6 +51,4 @@ class GameEngine{
 		//recursive animation loop
 		this.currentAnimation = window.requestAnimationFrame(this.continueRunning);
 	}
-
-	
-}
+};

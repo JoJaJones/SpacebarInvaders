@@ -4,14 +4,10 @@ const DEFAULT_BG = "#545351";
 const DEFAULT_TEXT = "#02d1d1";
 const links = ["main/main.html", "game/game.html", "list/list.html", "about/about.html"]
 
-// var width = document.documentElement.clientWidth;
-// var height = document.documentElement.clientHeight;
-
-var topDiv = document.getElementById("spacingDiv"); //spacer div at top of page
-var linkDiv = document.getElementById("linkDiv"); //nav bar div
-var contentFrame = document.getElementById("gameFrame"); //iframe for all page content
-
-var spans = linkDiv.getElementsByTagName("span"); //list of nav bar buttons
+let topDiv = document.getElementById("spacingDiv"); //spacer div at top of page
+let linkDiv = document.getElementById("linkDiv"); //nav bar div
+let contentFrame = document.getElementById("gameFrame"); //iframe for all page content
+let spans = linkDiv.getElementsByTagName("span"); //list of nav bar buttons
 
 //function to update the colors when hovered
 function hovered(){
@@ -32,27 +28,27 @@ function clicked(){
 
 //set click/hover/reset functions and the link variables for each span on page load
 function init(){
-	var j = 0;
-	for(var i of spans) {
-		var size = Math.floor(linkDiv.height/3).toString() + "px";
+	let j = 0;
+	for(let i of spans) {
 		i.addEventListener("mouseover", hovered);
 		i.addEventListener("mouseout", reset);
 		i.addEventListener("click", clicked);
 		i.link = links[j];
 		j++;
-	}	
+	}
+
 	resize(0);
 }
 
 //function to resize the navbar for consistent sizing on different page sizes
 function resize(event) {
-	var width = document.documentElement.clientWidth;
-	var height = document.documentElement.clientHeight;
+	let width = document.documentElement.clientWidth;
+	let height = document.documentElement.clientHeight;
 	topDiv.width = linkDiv.width = contentFrame.width = width;
 	topDiv.height = Math.floor(height*.02);
 	linkDiv.height = Math.floor(height*.08);
-	for(var i of spans) {
-		var size = Math.floor(linkDiv.height/3).toString() + "px";
+	for(let i of spans) {
+		let size = Math.floor(linkDiv.height/3).toString() + "px";
 		i.style.paddingTop = size;
 		i.style.paddingBottom = -size;
 		i.style.height = 2*size + "px";

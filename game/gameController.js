@@ -7,7 +7,7 @@ class GameController{
 	
 	//check if a button is being pressed, if so set it to active
 	detectButton(type, keyCode){
-		var isDown = (type == "keydown");
+		let isDown = (type == "keydown");
 		switch(keyCode){
 			//case for left arrow
 			case 37: this.left.toggleActive(isDown);
